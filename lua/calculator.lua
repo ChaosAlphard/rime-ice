@@ -4,7 +4,7 @@ local M = {}
 
 function M.init(env)
     local config = env.engine.schema.config
-    M.prefix = config:get_string('recognizer/patterns/calculator'):sub(2, 2) or 'C'
+    M.prefix = config:get_string('recognizer/patterns/calculator'):sub(2, 3) or 'cC'
 end
 
 local function startsWith(str, start)
